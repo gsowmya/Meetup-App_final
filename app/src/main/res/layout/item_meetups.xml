@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Billy"
+        android:id="@+id/tvEventTitle"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Meetup date, time, # of attendees"
+        android:id="@+id/tvEventDescription"
+        android:layout_below="@id/tvEventTitle"
+        android:maxLines="3"
+        />
+
+</RelativeLayout>

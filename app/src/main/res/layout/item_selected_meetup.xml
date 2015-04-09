@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/ivMeetupImage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ff84b1ff"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Meetup user"
+        android:id="@+id/tvMeetupUserName"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ivMeetupImage"
+        android:layout_toEndOf="@+id/ivMeetupImage" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Twitter user"
+        android:id="@+id/tvTwitterUserName"
+        android:layout_toRightOf="@+id/ivMeetupImage"
+        android:layout_toEndOf="@+id/ivMeetupImage"
+        android:layout_below="@id/tvMeetupUserName"
+        android:maxLines="3"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivTwitterFollow"
+        android:src="@drawable/follow"
+        android:layout_alignParentRight="true"
+
+        />
+
+</RelativeLayout>
